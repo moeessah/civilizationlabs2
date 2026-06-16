@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Civilization Labs | Decision Check</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <div class="brand-orb"></div>
+      Civilization Labs
+    </a>
+    <div class="nav-current" aria-live="polite" aria-atomic="true"><span>Now reading</span><strong>Start</strong></div>
+    <div class="nav-links">
+      <a href="#patterns">What we find</a>
+      <a href="#file">The brief</a>
+      <a href="#price">Pricing</a>
+      <a href="#intake">Submit</a>
+    </div>
+    <div class="nav-menu">
+      <button class="nav-menu-trigger" type="button" aria-label="Open section menu" aria-expanded="false" aria-controls="sectionMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu-panel" id="sectionMenu" aria-label="Section navigation">
+        <a href="#top">Start</a>
+        <a href="#problem">What we found</a>
+        <a href="#patterns">What we find</a>
+        <a href="#file">The brief</a>
+        <a href="#cases">Decision types</a>
+        <a href="#social">Reviews</a>
+        <a href="#price">Pricing</a>
+        <a href="#intake">Submit a decision</a>
+      </div>
+    </div>
+    <a href="#intake" class="nav-cta">Run a Check</a>
+  </div>
+</nav>
+
+<section class="hero" id="top" data-nav-label="Start">
+  <div class="hero-eyebrow">
+    <span class="live-pill"><span class="live-dot"></span>Now taking checks</span>
+    <span class="hero-eyebrow-sub">Independent review for launch, pricing, GTM, and roadmap decisions</span>
+  </div>
+
+  
+  <div class="hero-hl">
+    <h1 class="hero-h1" id="heroH1">
+      <span class="hw"><span class="hw-inner word-delay-0">Before next</span></span><br>
+      <span class="hw"><span class="hw-inner word-delay-1">quarter becomes</span></span><br>
+      <span class="hw"><span class="hw-inner word-delay-2"><span class="hi">expensive,</span></span></span><br>
+      <span class="hw"><span class="hw-inner word-delay-3">test the bet
+        <span class="inline-chip inline-chip-red"><span class="inline-chip-icon">⚑</span>by the next meeting</span>
+      </span></span>
+    </h1>
+  </div>
+
+  <div class="hero-split">
+    <div class="hero-sidebar">
+      <p class="hero-body">We read the memo, pricing proposal, or roadmap bet before your team commits. You get back a marked brief: every claim scored, every gap named, one less test to run.</p>
+      <div class="hero-actions">
+        <a href="#intake" class="btn-ink">Run a Decision Check</a>
+        <a href="#file" class="btn-outline">See what comes back</a>
+      </div>
+      <div class="trust-tags">
+        <span class="trust-tag">Senior analyst review</span>
+        <span class="trust-tag">NDA available</span>
+        <span class="trust-tag">48h turnaround</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-media" aria-hidden="true">
+    <img src="assets/illustrations/hero-decision-check-machine.webp" alt="">
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>Product Launch</strong> / Before roadmap becomes a release date</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>Pricing</strong> / Before the number reaches customers</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>Campaign</strong> / Before budget leaves the account</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>Roadmap</strong> / Before Q3 becomes Q1 of next year</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>GTM Bets</strong> / Before the team spends the quarter on it</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>48h turnaround</strong> / From materials to marked brief</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>Product Launch</strong> / Before roadmap becomes a release date</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>Pricing</strong> / Before the number reaches customers</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>Campaign</strong> / Before budget leaves the account</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>Roadmap</strong> / Before Q3 becomes Q1 of next year</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>GTM Bets</strong> / Before the team spends the quarter on it</div>
+    <div class="ticker-item"><div class="ticker-dot"></div><strong>48h turnaround</strong> / From materials to marked brief</div>
+  </div>
+</div>
+
+<section class="problem" id="problem" data-nav-label="What we found">
+  <div class="problem-wrap">
+    <div class="section-kicker reveal">What usually breaks first</div>
+    <div class="problem-grid">
+      <div class="pb-main reveal-l">
+        <div>
+          <h2 class="pb-h">The plan looks clean. The load-bearing claim is still untested.</h2>
+          <p class="pb-body">Most plans pass internal review without anyone asking the hard question: what has to be true for this to work, and who has actually checked it? Buyer behavior, market timing, renewal risk, borrowed comparables, the gap is rarely visible until it costs you.</p>
+        </div>
+      </div>
+      <div class="reveal-r pb-stat-stack">
+        <div class="pb-stat pb-stat-illustrated">
+          <img class="pb-stat-art" src="assets/illustrations/stat-card-analyst.webp" alt="" aria-hidden="true">
+          <div class="pb-stat-n">67%</div>
+          <p class="pb-stat-desc">of reviewed launch plans relied on interest signals where buying evidence was needed</p>
+        </div>
+        <div class="pb-stat">
+          <div class="pb-stat-n">3.2×</div>
+          <p class="pb-stat-desc">the cost of a bad bet, for every quarter you don't test the assumption</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="patterns" id="patterns" data-nav-label="What we find">
+  <div class="patterns-wrap">
+    <div class="patterns-head reveal">
+      <div>
+        <div class="section-kicker">What we find, consistently</div>
+        <h2 class="patterns-h">Four failures we keep finding.</h2>
+      </div>
+      <p class="patterns-desc">We look for the claim that quietly makes the launch date, revenue case, or budget request hold together and test whether it's real.</p>
+    </div>
+
+    <div class="pattern-list reveal">
+      <div class="pattern-item has-dead-plant">
+        <img class="pattern-dead-plant" src="assets/illustrations/plants/demand-risk-wilted-plant.webp" alt="" aria-hidden="true">
+        <div>
+          <div class="pnum">01</div>
+          <div class="pattern-title">Interest is counted as demand</div>
+          <p class="pattern-body">Positive calls and waitlists show interest. They do not prove buyers will pay, switch, renew, or change workflow.</p>
+        </div>
+        <div>
+          <span class="pattern-tag">Demand risk</span>
+          <div class="pattern-proof"><span>Board question</span><strong>What evidence shows the buyer will act, not just approve of the idea?</strong></div>
+        </div>
+      </div>
+      <div class="pattern-item">
+        <div>
+          <div class="pnum">02</div>
+          <div class="pattern-title">The wrong market is used as proof</div>
+          <p class="pattern-body">The plan borrows a pricing move, sales motion, or adoption curve from a market with different urgency, budgets, switching costs, or procurement friction.</p>
+        </div>
+        <div>
+          <span class="pattern-tag">Bad comparable</span>
+          <div class="pattern-proof"><span>Board question</span><strong>Which comparable case behaves enough like this market to trust the analogy?</strong></div>
+        </div>
+      </div>
+      <div class="pattern-item">
+        <div>
+          <div class="pnum">03</div>
+          <div class="pattern-title">One weak claim breaks the whole model</div>
+          <p class="pattern-body">Ramp, conversion, retention, payback, and support load are shown separately. If the core number is wrong, several lines move at once.</p>
+        </div>
+        <div>
+          <span class="pattern-tag">Linked risk</span>
+          <div class="pattern-proof"><span>Board question</span><strong>If this number is wrong, which other lines stop working?</strong></div>
+        </div>
+      </div>
+      <div class="pattern-item">
+        <div>
+          <div class="pnum">04</div>
+          <div class="pattern-title">Internal agreement is treated as evidence</div>
+          <p class="pattern-body">The team has repeated the plan until it feels proven. The market, the buyer, and the budget owner have not confirmed it.</p>
+        </div>
+        <div>
+          <span class="pattern-tag">Internal bias</span>
+          <div class="pattern-proof"><span>Board question</span><strong>Who has tested this without needing the answer to be yes?</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proof-trail reveal">
+      <div class="pnode">
+        <span class="pnode-lbl">Plan claim</span>
+        <strong>Customers asked for this</strong>
+      </div>
+      <div class="parrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="pnode lit">
+        <span class="pnode-lbl">What's really being bet on</span>
+        <strong>Interest will become paid usage</strong>
+      </div>
+      <div class="parrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="pnode">
+        <span class="pnode-lbl">Next test</span>
+        <strong>Paid pilot with renewal criteria</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="file-section" id="file" data-nav-label="The brief">
+  <div class="file-wrap">
+    <div class="file-head reveal">
+      <div>
+        <div class="section-kicker">What you get back</div>
+        <h2 class="file-h">A brief your board can interrogate.</h2>
+      </div>
+      <p class="file-desc">Written for the meeting where someone will ask what you actually tested.</p>
+    </div>
+
+    <div class="bento reveal">
+      <div class="bento-main">
+        <div class="fbrowser">
+          <div class="fbrowser-bar">
+            <div class="fdots"><span></span><span></span><span></span></div>
+            <div class="furl">civilizationlabs.co/check/review-00142</div>
+            <div class="fstamp">⚑ Revise before rollout</div>
+          </div>
+          <div class="fbrowser-head">
+            <div>
+              <span class="col-label">Reviewed decision file</span>
+              <div class="fbrowser-title">Raise pricing by 18% next quarter across all tiers</div>
+            </div>
+          </div>
+          <div class="fbrowser-body">
+            <div class="memo-col">
+              <span class="col-label">Original plan excerpt</span>
+              <p class="memo-text">The proposal uses <span class="memo-hl">new-logo demand signals</span> to justify an 18% increase for existing customers at renewal. These are different decisions with different evidence requirements.</p>
+              <div class="callout">New prospects may accept the higher price. Existing customers need a separate renewal cohort test before the increase is applied across the base.</div>
+              <img class="memo-plant" src="assets/illustrations/plants/pricing-callout-seedling.webp" alt="" aria-hidden="true">
+            </div>
+            <div class="scores-col">
+              <div class="note-box">
+                <span class="col-label">Analyst note</span>
+                Separate new-logo pricing from renewal risk. New-logo evidence is stronger. Existing-customer evidence is thin and directionally concerning.
+              </div>
+              <div class="score-row">
+                <span class="sval score-risk-value">31%</span>
+                <span class="stxt">Existing customers accept renewal increase without discount pressure</span>
+                <span class="stag stag-risk">Fragile</span>
+              </div>
+              <div class="score-row">
+                <span class="sval score-weak-value">42%</span>
+                <span class="stxt">Sales team holds price without concessions under pressure</span>
+                <span class="stag stag-weak">Weak</span>
+              </div>
+              <div class="score-row">
+                <span class="sval score-ok-value">68%</span>
+                <span class="stxt">Competitor pricing supports the new anchor in new-logo conversations</span>
+                <span class="stag stag-ok">Partial</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-sidebar">
+        <div class="bento-card lime-card">
+          <span class="bc-label">Turnaround</span>
+          <div class="bc-num">48h</div>
+          <p class="bc-body">Most checks land faster. Never longer.</p>
+        </div>
+        <div class="bento-card peach-card">
+          <span class="bc-label">What gets marked</span>
+          <div class="bc-title">Claims scored. Gaps named. One next test.</div>
+          <p class="bc-body">A decision brief that shows where the plan depends on evidence it does not yet have.</p>
+        </div>
+        <div class="bento-card">
+          <span class="bc-label">Format</span>
+          <div class="bc-title">3 to 5 pages. Readable in one sitting.</div>
+          <p class="bc-body">Readable before the meeting. Useful inside it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cases" id="cases" data-nav-label="Decision types">
+  <div class="cases-wrap">
+    <div class="cases-top reveal">
+      <div>
+        <div class="section-kicker cases-kicker">Decision types</div>
+        <h2 class="cases-h">What we test<br>by decision type.</h2>
+      </div>
+      <div class="tab-row" role="tablist">
+        <button class="ctab" type="button" data-case="pricing" role="tab" aria-selected="false">Pricing</button>
+        <button class="ctab active" type="button" data-case="launch" role="tab" aria-selected="true">Launch</button>
+        <button class="ctab" type="button" data-case="campaign" role="tab" aria-selected="false">Campaign</button>
+        <button class="ctab" type="button" data-case="roadmap" role="tab" aria-selected="false">Roadmap</button>
+      </div>
+    </div>
+    <div class="case-panel reveal">
+      <div class="case-main">
+        <div class="case-type-pill" id="caseType">Product launch</div>
+        <div class="case-title" id="caseTitle">Ship the AI workflow feature in Q3.</div>
+        <p class="case-copy" id="caseCopy">The launch memo says customers asked for automation. The evidence supports discovery interest, not a full launch commitment.</p>
+      </div>
+      <div class="case-boxes">
+        <div class="cbox lime-b">
+          <span class="cbox-label">Weak claim</span>
+          <p id="caseWeak">Five sales calls and one enterprise prospect are carrying the entire launch case.</p>
+        </div>
+        <div class="cbox">
+          <span class="cbox-label">Next test</span>
+          <p id="caseTest">Run a beta cohort with 12 active users and measure repeat use after two weeks.</p>
+        </div>
+        <div class="cbox">
+          <span class="cbox-label">Evidence to collect</span>
+          <p id="caseEvidence">Repeat use rate, activation lift, support burden, and budget owner urgency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="social" data-nav-label="Reviews">
+  <img class="test-plant test-plant-left" src="assets/illustrations/plants/testimonials-left-foliage.webp" alt="" aria-hidden="true">
+  <img class="test-plant test-plant-right" src="assets/illustrations/plants/testimonials-right-foliage.webp" alt="" aria-hidden="true">
+  <div class="test-wrap">
+    <div class="test-head reveal">
+      <div>
+        <div class="section-kicker">Before they committed</div>
+        <h2 class="test-h">What changed after the check.</h2>
+      </div>
+      <p class="test-sub">Four decisions that went differently because someone asked the hard question first.</p>
+    </div>
+
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="tcard" data-idx="0">
+          <div class="tcard-role">COO · Series B SaaS</div>
+          <p class="tquote">"We were 48 hours from announcing a pricing change. The check showed us we were solving for new-logo volume while the real risk was renewal churn. We split the rollout. It saved us a very expensive conversation with our largest accounts."</p>
+          <div class="tcard-foot">
+            <div class="avatar"><img src="assets/reviews/sarah-k.webp" alt="Sarah K. portrait"></div>
+            <div><div class="tname">Sarah K.</div><div class="trole-sm">COO · Series B SaaS</div></div>
+          </div>
+        </div>
+        <div class="tcard" data-idx="1">
+          <div class="tcard-role">Founder · B2B Fintech</div>
+          <p class="tquote">"Our campaign memo read like a strong argument. The check identified we were treating engagement as buyer intent across the wrong segment. We redirected $30k before it went out."</p>
+          <div class="tcard-foot">
+            <div class="avatar"><img src="assets/reviews/marcus-o.webp" alt="Marcus O. portrait"></div>
+            <div><div class="tname">Marcus O.</div><div class="trole-sm">Founder · B2B Fintech</div></div>
+          </div>
+        </div>
+        <div class="tcard" data-idx="2">
+          <div class="tcard-role">VP Product · Enterprise HR</div>
+          <p class="tquote">"The fact that they do not tell you what to do is exactly what makes it useful. You get a clear picture of what you are actually betting on. The decision is still yours. Now the risk is explicit."</p>
+          <div class="tcard-foot">
+            <div class="avatar"><img src="assets/reviews/priya-n.webp" alt="Priya N. portrait"></div>
+            <div><div class="tname">Priya N.</div><div class="trole-sm">VP Product · Enterprise HR Tech</div></div>
+          </div>
+        </div>
+        <div class="tcard" data-idx="3">
+          <div class="tcard-role">Head of Product · PLG SaaS</div>
+          <p class="tquote">"The roadmap review caught that we had five features justified by the same two customer quotes. The brief named three linked assumptions we'd never stress-tested. We pushed three weeks and shipped something much stronger."</p>
+          <div class="tcard-foot">
+            <div class="avatar"><img src="assets/reviews/james-t.webp" alt="James T. portrait"></div>
+            <div><div class="tname">James T.</div><div class="trole-sm">Head of Product · PLG SaaS</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="c-btn" type="button" id="prevBtn" aria-label="Previous">←</button>
+      <button class="c-btn" type="button" id="nextBtn" aria-label="Next">→</button>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="price" data-nav-label="Pricing">
+  <div class="pricing-wrap">
+    <div class="pricing-header reveal">
+      <div>
+        <div class="section-kicker">Ways to work</div>
+        <h2 class="pricing-h">Start with one decision.</h2>
+      </div>
+      <p class="pricing-sub">Most teams start with one live decision. Packs are for connected decisions in the same planning cycle.</p>
+    </div>
+    <div class="price-grid reveal">
+      
+      <div class="price-card">
+        <div>
+          <span class="price-tier">Single decision</span>
+          <div class="price-amount">$995</div>
+          <div class="price-period">per decision</div>
+        </div>
+        <div class="price-divider"></div>
+        <ul class="price-feats">
+          <li>One plan, one reviewed brief</li>
+          <li>Claims scored and ranked</li>
+          <li>Evidence gaps named</li>
+          <li>One next test specified</li>
+          <li>48h turnaround</li>
+        </ul>
+        <div class="price-action">
+          <a href="#intake" class="btn-white-outline">Request scope</a>
+        </div>
+      </div>
+      
+      <div class="price-card featured">
+        <div>
+          <div class="price-badge">Most popular</div>
+          <span class="price-tier">Planning cycle</span>
+          <div class="price-amount">$2,700</div>
+          <div class="price-period">three decisions, shared context</div>
+        </div>
+        <div class="price-divider"></div>
+        <ul class="price-feats">
+          <li>Three Decision Checks</li>
+          <li>Shared context across checks</li>
+          <li>Linked risk flags</li>
+          <li>Launch + GTM + pricing together</li>
+        </ul>
+        <div class="price-action">
+          <a href="#intake" class="btn-lime">Ask about this</a>
+        </div>
+      </div>
+      
+      <div class="price-card">
+        <div>
+          <span class="price-tier">Recurring</span>
+          <div class="price-amount">Custom</div>
+          <div class="price-period">studios, accelerators, portfolio teams</div>
+        </div>
+        <div class="price-divider"></div>
+        <ul class="price-feats">
+          <li>Recurring checks, portfolio workflow</li>
+          <li>Custom turnaround SLA</li>
+          <li>Onboarding call</li>
+          <li>NDA for all portfolio companies</li>
+        </ul>
+        <div class="price-action">
+          <a href="#intake" class="btn-white-outline">Discuss scope</a>
+        </div>
+      </div>
+    </div>
+    <div class="scope-ribbon reveal">
+      <p><strong>All checks start with a scope check.</strong> Submit the decision first. We confirm fit before asking for payment or materials.</p>
+      <a href="#intake" class="btn-white-outline scope-ribbon-action">Submit for scope check</a>
+    </div>
+  </div>
+</section>
+
+<section class="trust" id="trust" data-nav-label="How the work is done">
+  <img class="trust-plant" src="assets/illustrations/plants/trust-section-foliage.webp" alt="" aria-hidden="true">
+  <div class="trust-wrap">
+    <div class="trust-head reveal">
+      <div class="section-kicker">How the work is done</div>
+      <h2 class="trust-h">Built for operators<br>who need to know,<br>not to feel better.</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-cell reveal">
+        <div class="trust-num">01</div>
+        <strong>Senior analyst review, every time</strong>
+        <p>A senior analyst reads your materials and writes the brief. No automated summary. A human checks the business context.</p>
+      </div>
+      <div class="trust-cell reveal reveal-delay-1">
+        <div class="trust-num">02</div>
+        <strong>No stake in the outcome</strong>
+        <p>We do not sell implementation or stay on to justify the plan. We are paid to name the weak point.</p>
+      </div>
+      <div class="trust-cell reveal reveal-delay-2">
+        <div class="trust-num">03</div>
+        <strong>Your files stay yours</strong>
+        <p>NDA available before you share anything. We do not train on your materials. You own everything you send and everything you receive back.</p>
+      </div>
+      <div class="trust-cell reveal reveal-delay-3">
+        <div class="trust-num">04</div>
+        <strong>Scope confirmed first</strong>
+        <p>We review whether the decision fits before sending payment details. If it doesn't fit, we say so.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intake" id="intake" data-nav-label="Submit a decision">
+  <div class="intake-wrap">
+    <div class="intake-grid">
+      <div class="reveal-l intake-copy">
+        <div class="section-kicker">Submit a decision</div>
+        <h2 class="intake-h">Run the check.</h2>
+        <p class="intake-desc">Takes 5 minutes. Scope check within one business day. No payment until we confirm it fits.</p>
+        <ul class="check-list">
+          <li>Scope check response within one business day</li>
+          <li>NDA signed before you share any materials</li>
+          <li>Senior analyst reads everything, no automated summary</li>
+          <li>You keep all files and the brief</li>
+        </ul>
+        <img class="intake-illustration" src="assets/illustrations/contact-section-analyst.webp" alt="" aria-hidden="true">
+      </div>
+      <div class="reveal-r">
+        <div class="form-card">
+          <form id="intakeForm">
+            <div class="form-sec">
+              <div class="form-hd">
+                <span class="fstep">01</span>
+                <h3>The decision</h3>
+              </div>
+              <div id="scopeWarning" class="scope-warn">This may fall outside scope. We review business planning decisions only, not legal, HR, financial investment, or medical decisions.</div>
+              <div class="field-row">
+                <div class="fwrap fwrap-compact">
+                  <label for="decisionType">Decision type</label>
+                  <select id="decisionType" required>
+                    <option value="">Choose one</option>
+                    <option>Product launch</option>
+                    <option>Pricing change</option>
+                    <option>Campaign or GTM spend</option>
+                    <option>Roadmap bet</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="fwrap fwrap-compact">
+                  <label for="deadline">Decision deadline</label>
+                  <select id="deadline" required>
+                    <option value="">Choose one</option>
+                    <option>This week</option>
+                    <option>Next 2 weeks</option>
+                    <option>This month</option>
+                    <option>This quarter</option>
+                    <option>No fixed deadline</option>
+                  </select>
+                </div>
+              </div>
+              <div class="fwrap">
+                <label for="decisionText">What are you deciding?</label>
+                <input id="decisionText" type="text" required placeholder="Should we raise prices by 18% next quarter?"/>
+              </div>
+              <div class="fwrap fwrap-compact">
+                <label for="stakesText">What happens if this is wrong?</label>
+                <input id="stakesText" type="text" required placeholder="We risk churn, slower sales cycles, and a weak board narrative."/>
+              </div>
+            </div>
+            <div class="form-sec">
+              <div class="form-hd">
+                <span class="fstep">02</span>
+                <h3>Materials</h3>
+              </div>
+              <div class="field-row">
+                <div class="fwrap fwrap-compact">
+                  <label for="matType">Primary material type</label>
+                  <select id="matType" required>
+                    <option value="">Choose one</option>
+                    <option>Memo</option><option>Deck</option><option>Roadmap note</option>
+                    <option>Pricing proposal</option><option>Campaign brief</option>
+                    <option>Spreadsheet</option><option>Customer research</option>
+                    <option>Board update draft</option><option>Other</option>
+                  </select>
+                </div>
+                <div class="fwrap fwrap-compact">
+                  <label for="ndaSelect">NDA before materials?</label>
+                  <select id="ndaSelect" required>
+                    <option value="">Choose one</option>
+                    <option>No</option><option>Yes</option>
+                  </select>
+                </div>
+              </div>
+              <div class="fwrap">
+                <label for="summaryText">Plan summary</label>
+                <textarea id="summaryText" required placeholder="Tell us what the plan is, why the team wants to act, and what evidence you already have."></textarea>
+              </div>
+              <div class="fwrap fwrap-compact">
+                <label for="fileInput">Upload documents (optional)</label>
+                <input id="fileInput" type="file" multiple/>
+                <span id="uploadHelp" class="upload-help">Decks, memos, spreadsheets, roadmap notes, customer research, campaign briefs.</span>
+              </div>
+            </div>
+            <div class="form-sec">
+              <div class="form-hd">
+                <span class="fstep">03</span>
+                <h3>Contact</h3>
+              </div>
+              <div class="field-row">
+                <div class="fwrap fwrap-compact">
+                  <label for="emailField">Work email</label>
+                  <input id="emailField" type="email" required placeholder="you@company.com"/>
+                </div>
+                <div class="fwrap fwrap-compact">
+                  <label for="companyField">Company</label>
+                  <input id="companyField" type="text" required placeholder="Company name"/>
+                </div>
+              </div>
+              <div class="fwrap">
+                <label for="roleField">Your role</label>
+                <input id="roleField" type="text" required placeholder="Founder, COO, Head of Product, VP Growth"/>
+              </div>
+              <div class="fwrap fwrap-compact">
+                <label for="extraField">Anything else? (optional)</label>
+                <textarea id="extraField" class="textarea-short"></textarea>
+              </div>
+              <div class="form-action">
+                <button type="submit" class="form-submit">Submit for scope check</button>
+              </div>
+            </div>
+          </form>
+          <div class="success-msg" id="successState">
+            <h3>Request received.</h3>
+            <p>We'll run a scope check first. If the decision fits, we'll send next steps, timing, and payment details within one business day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="footer-cta">
+  <div class="footer-cta-inner reveal">
+    <div class="footer-h">
+      Run the plan<br>before the plan<br><span class="stroke">runs the team.</span>
+    </div>
+    <div class="footer-actions">
+      <a href="#intake" class="btn-ink">Start a Decision Check</a>
+      <a href="#file" class="btn-outline">See what comes back</a>
+    </div>
+  </div>
+  <div class="footer-watermark" aria-hidden="true">CIV LABS</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Civilization Labs</div>
+        <p class="footer-brand-sub">Independent decision review before the commit. Strategic analysis only.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#file">Decision file</a>
+        <a href="#patterns">What we find</a>
+        <a href="#cases">Use cases</a>
+        <a href="#price">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Scope</h4>
+        <a href="#cases">Launch</a>
+        <a href="#cases">Pricing</a>
+        <a href="#cases">Campaign</a>
+        <a href="#cases">Roadmap</a>
+      </div>
+      <div class="footer-col">
+        <h4>Trust</h4>
+        <a href="#intake">NDA available</a>
+        <a href="#intake">No training on files</a>
+        <a href="#intake">Senior analyst review</a>
+        <a href="#intake">Client keeps IP</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Final decisions stay with the client.</span>
+      <span>© Civilization Labs</span>
+    </div>
+  </div>
+</footer>
+
+<script defer src="assets/js/site.js"></script>
+</body>
+</html>
